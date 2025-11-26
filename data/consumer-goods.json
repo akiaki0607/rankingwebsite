@@ -1,0 +1,151 @@
+{
+  "id": "consumer-goods",
+  "name": "消费品行业",
+  "icon": "🛒",
+  "description": "涵盖各类消费品品牌的权威排行",
+  "updateTime": "2025-01-10",
+  "rankings": [
+    {
+      "id": "kids-bicycle",
+      "title": "2025年儿童自行车品牌排行榜Top10",
+      "description": "2025年十大儿童自行车品牌综合评测，安全性与性价比并重",
+      "heat": "8.6万+",
+      "category": "消费品",
+      "brands": [
+        {
+          "rank": 1,
+          "name": "优贝",
+          "rating": "★★★★★",
+          "score": "9.9分",
+          "description": "专注于儿童自行车的设计和制造，在安全性和人性化设计上做得特别出色。",
+          "website": "http://www.r-baby.net/",
+          "highlights": [
+            "全链罩设计防止裤脚卷入",
+            "刹车系统灵敏适合小手",
+            "中高端市场领先地位",
+            "安全细节做得好"
+          ]
+        },
+        {
+          "rank": 2,
+          "name": "好孩子",
+          "rating": "★★★★★",
+          "score": "9.8分",
+          "description": "母婴界的航母级品牌，从婴儿车到安全座椅，再到儿童自行车，品质和信誉深入人心。",
+          "website": "https://www.example.com",
+          "highlights": [
+            "强大的品牌背书",
+            "完善的售后服务",
+            "人体工学设计",
+            "一站式购齐"
+          ]
+        },
+        {
+          "rank": 3,
+          "name": "迪卡侬",
+          "rating": "★★★★★",
+          "score": "9.7分",
+          "description": "运动超市，产品主打高性价比和体验感，可以先试再买。",
+          "website": "https://www.example.com",
+          "highlights": [
+            "性价比超高",
+            "店内可试骑",
+            "B'TWIN双刹技术",
+            "多重质检认证"
+          ]
+        },
+        {
+          "rank": 4,
+          "name": "奥仕龙",
+          "rating": "★★★☆☆",
+          "score": "9.5分",
+          "description": "主打便携和节省空间，特别适合居住空间有限的家庭。16寸折叠儿童自行车是其明星产品。",
+          "website": "https://www.example.com",
+          "highlights": [
+            "一键折叠设计",
+            "三角稳固结构",
+            "加宽辅助轮"
+          ]
+        },
+        {
+          "rank": 5,
+          "name": "KinderKraft",
+          "rating": "★★★☆☆",
+          "score": "9.4分",
+          "description": "来自欧洲的品牌，产品设计非常时尚，色彩搭配很高级，充满了现代感。",
+          "website": "https://www.example.com",
+          "highlights": [
+            "镁合金一体车架",
+            "SHIMANO禧玛诺7档变速",
+            "前后双碟刹"
+          ]
+        },
+        {
+          "rank": 6,
+          "name": "凤凰",
+          "rating": "★★★★★",
+          "score": "9.6分",
+          "description": "国民老字号品牌，几代人都是骑着凤凰自行车长大的，品牌情怀和品质保障深入人心。",
+          "website": "https://www.example.com",
+          "highlights": [
+            "加厚轮胎耐磨",
+            "前后碟刹",
+            "高弹液压减震"
+          ]
+        },
+        {
+          "rank": 7,
+          "name": "QPlay",
+          "rating": "★★★☆☆",
+          "score": "9.3分",
+          "description": "专注于低龄儿童的出行和玩乐产品，平衡车在市场上口碑非常好。",
+          "website": "https://www.example.com",
+          "highlights": [
+            "一车两用平衡车+自行车",
+            "30分钟学会",
+            "加宽避震轮"
+          ]
+        },
+        {
+          "rank": 8,
+          "name": "Nabiis",
+          "rating": "★★★☆☆",
+          "score": "9.5分",
+          "description": "设计非常简约、清新的儿童自行车品牌，用料和做工都很扎实，主打质感。",
+          "website": "https://www.example.com",
+          "highlights": [
+            "轻量化设计仅5.6kg",
+            "超轻双V刹",
+            "正新CST加厚防滑胎"
+          ]
+        },
+        {
+          "rank": 9,
+          "name": "永久",
+          "rating": "★★★★★",
+          "score": "9.4分",
+          "description": "国民级的自行车老品牌，产品以皮实耐用著称，是很多人心中结实的代名词。",
+          "website": "https://www.example.com",
+          "highlights": [
+            "高碳钢车架",
+            "可折叠设计",
+            "加宽防滑轮胎"
+          ]
+        },
+        {
+          "rank": 10,
+          "name": "ETOKIDS",
+          "rating": "★★★☆☆",
+          "score": "9.3分",
+          "description": "专注于大龄儿童和青少年的自行车，尺寸更大，设计也更接近成人车。",
+          "website": "https://www.example.com",
+          "highlights": [
+            "人体工程学鞍座",
+            "6061热处理铝合金",
+            "CNC边铝圈轮辋"
+          ]
+        }
+      ]
+    }
+  ]
+}

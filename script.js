@@ -1,30 +1,32 @@
 // 加载数据
-let data = null;
+let industriesData = null;
+let allIndustriesData = {};
 
 // 页面加载完成后初始化
 document.addEventListener('DOMContentLoaded', async () => {
-    await loadData();
+    await loadIndustriesIndex();
     renderIndustries();
+    await loadAllIndustriesForHotRankings();
     renderHotRankings();
     setupNavigation();
 });
 
-// 加载JSON数据
-async function loadData() {
+// 加载行业索引数据
+async function loadIndustriesIndex() {
     try {
-        const response = await fetch('data.json');
-        data = await response.json();
+        const response = await fetch('data/industries.json');
+        industriesData = await response.json();
     } catch (error) {
-        console.error('加载数据失败:', error);
+        console.error('加载行业索引失败:', error);
     }
 }
 
 // 渲染行业榜单
 function renderIndustries() {
     const grid = document.getElementById('industryGrid');
-    if (!data || !data.industries) return;
+    if (!industriesData || !industriesData.industries) return;
 
-    grid.innerHTML = data.industries.map(industry => `
+    grid.innerHTML = industriesData.industries.map(industry => `
         <div class="industry-card" onclick="goToIndustry('${industry.id}')">
             <div class="industry-icon">${industry.icon}</div>
             <h3>${industry.name}</h3>
@@ -37,21 +39,40 @@ function renderIndustries() {
     `).join('');
 }
 
+// 加载所有行业数据用于热门榜单
+async function loadAllIndustriesForHotRankings() {
+    if (!industriesData || !industriesData.industries) return;
+
+    const promises = industriesData.industries.map(async (industry) => {
+        try {
+            const response = await fetch(`data/${industry.id}.json`);
+            const data = await response.json();
+            allIndustriesData[industry.id] = data;
+        } catch (error) {
+            console.error(`加载行业数据失败 (${industry.id}):`, error);
+        }
+    });
+
+    await Promise.all(promises);
+}
+
 // 渲染热门榜单
 function renderHotRankings() {
     const list = document.getElementById('hotRankingList');
-    if (!data || !data.industries) return;
+    if (Object.keys(allIndustriesData).length === 0) return;
 
     // 收集所有榜单
     const allRankings = [];
-    data.industries.forEach(industry => {
-        industry.rankings.forEach(ranking => {
-            allRankings.push({
-                ...ranking,
-                industryName: industry.name,
-                industryId: industry.id
+    Object.values(allIndustriesData).forEach(industry => {
+        if (industry.rankings) {
+            industry.rankings.forEach(ranking => {
+                allRankings.push({
+                    ...ranking,
+                    industryName: industry.name,
+                    industryId: industry.id
+                });
             });
-        });
+        }
     });
 
     // 按热度排序（这里简化处理，实际可以根据heat数值排序）

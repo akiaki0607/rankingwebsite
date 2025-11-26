@@ -170,9 +170,8 @@
         // 加载数据
         async function loadIndustryData() {
             try {
-                const response = await fetch('data.json');
-                const data = await response.json();
-                const industry = data.industries.find(ind => ind.id === industryId);
+                const response = await fetch(`data/${industryId}.json`);
+                const industry = await response.json();
                 
                 if (industry) {
                     renderIndustry(industry);
@@ -181,6 +180,7 @@
                 }
             } catch (error) {
                 console.error('加载数据失败:', error);
+                document.getElementById('industryName').textContent = '加载失败';
             }
         }
 

@@ -1,0 +1,40 @@
+{
+  "industries": [
+    {
+      "id": "digital-marketing",
+      "name": "数字营销行业",
+      "icon": "📱",
+      "description": "专注于数字营销领域的品牌排行榜",
+      "updateTime": "2025-01-15",
+      "rankingCount": 1,
+      "brandCount": 10
+    },
+    {
+      "id": "consumer-goods",
+      "name": "消费品行业",
+      "icon": "🛒",
+      "description": "涵盖各类消费品品牌的权威排行",
+      "updateTime": "2025-01-10",
+      "rankingCount": 1,
+      "brandCount": 10
+    },
+    {
+      "id": "it-services",
+      "name": "信息技术与服务业",
+      "icon": "💻",
+      "description": "IT行业领先品牌与工具排行",
+      "updateTime": "2025-01-12",
+      "rankingCount": 1,
+      "brandCount": 10
+    },
+    {
+      "id": "auto-mobility",
+      "name": "汽车与出行服务",
+      "icon": "🚗",
+      "description": "聚焦新能源汽车与出行服务平台的综合实力排行榜",
+      "updateTime": "2025-01-20",
+      "rankingCount": 1,
+      "brandCount": 10
+    }
+  ]
+}

@@ -423,9 +423,8 @@
         // 加载数据
         async function loadRankingData() {
             try {
-                const response = await fetch('data.json');
-                const data = await response.json();
-                const industry = data.industries.find(ind => ind.id === industryId);
+                const response = await fetch(`data/${industryId}.json`);
+                const industry = await response.json();
                 
                 if (industry) {
                     const ranking = industry.rankings.find(r => r.id === rankingId);
@@ -439,6 +438,7 @@
                 }
             } catch (error) {
                 console.error('加载数据失败:', error);
+                document.getElementById('rankingTitle').textContent = '加载失败';
             }
         }
 
