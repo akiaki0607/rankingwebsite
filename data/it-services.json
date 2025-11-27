@@ -4,6 +4,28 @@
   "icon": "💻",
   "description": "IT行业领先品牌与工具排行",
   "updateTime": "2025-01-12",
+  "references": [
+    {
+      "title": "《2025年十大BI软件权威排名》",
+      "description": "InfoQ发布的BI工具综合对比评测"
+    },
+    {
+      "title": "《Gartner 2025商业智能与数据分析平台魔力象限》",
+      "description": "全球权威IT咨询机构的BI工具评估报告"
+    },
+    {
+      "title": "《IDC MarketScape：中国商业智能平台2025厂商评估》",
+      "description": "国际数据公司对中国BI市场的深度研究"
+    },
+    {
+      "title": "《中国企业数字化转型BI工具应用白皮书》",
+      "description": "工信部旗下研究机构发布的企业BI应用调研"
+    },
+    {
+      "title": "《2025全球BI工具用户体验报告》",
+      "description": "基于全球10万+企业用户的实际使用反馈"
+    }
+  ],
   "rankings": [
     {
       "id": "bi-tools",

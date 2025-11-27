@@ -35,6 +35,60 @@
       "updateTime": "2025-01-20",
       "rankingCount": 1,
       "brandCount": 10
+    },
+    {
+      "id": "education-online",
+      "name": "教育与培训",
+      "icon": "📚",
+      "description": "聚焦在线教育平台与学习服务品牌的综合实力排行榜",
+      "updateTime": "2025-01-22",
+      "rankingCount": 1,
+      "brandCount": 10
+    },
+    {
+      "id": "travel-hospitality",
+      "name": "旅游、文旅与酒店",
+      "icon": "🏨",
+      "description": "覆盖在线旅游平台与酒店集团等文旅相关品牌的综合排行榜",
+      "updateTime": "2025-01-22",
+      "rankingCount": 1,
+      "brandCount": 10
+    },
+    {
+      "id": "smart-home-ecosystem",
+      "name": "家电与智能家居（AI智能硬件）",
+      "icon": "🏠",
+      "description": "聚焦智能家居生态与AI智能硬件品牌的综合实力排行榜",
+      "updateTime": "2025-01-22",
+      "rankingCount": 1,
+      "brandCount": 10
+    },
+    {
+      "id": "logistics-cold-chain",
+      "name": "物流与供应链服务",
+      "icon": "🚚",
+      "description": "聚焦冷链运输、冷库仓储与温控配送场景的冷链物流企业综合实力排行榜",
+      "updateTime": "2025-01-22",
+      "rankingCount": 1,
+      "brandCount": 10
+    },
+    {
+      "id": "industrial-robots",
+      "name": "工业与智能制造",
+      "icon": "🤖",
+      "description": "聚焦工业机器人本体及相关自动化场景的品牌综合实力排行榜",
+      "updateTime": "2025-01-22",
+      "rankingCount": 1,
+      "brandCount": 10
+    },
+    {
+      "id": "cloud-computing",
+      "name": "云计算与AI基础设施",
+      "icon": "☁️",
+      "description": "聚焦云计算平台与AI基础设施能力的综合实力排行榜",
+      "updateTime": "2025-01-22",
+      "rankingCount": 1,
+      "brandCount": 10
     }
   ]
 }

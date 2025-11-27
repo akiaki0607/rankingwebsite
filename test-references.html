@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>测试参考信源</title>
+</head>
+<body>
+    <h1>测试参考信源功能</h1>
+    <div id="result"></div>
+    
+    <script>
+        async function test() {
+            const response = await fetch('data/industrial-robots.json');
+            const data = await response.json();
+            
+            const result = document.getElementById('result');
+            result.innerHTML = `
+                <h2>行业: ${data.name}</h2>
+                <h3>是否有references: ${!!data.references}</h3>
+                <h3>references数量: ${data.references ? data.references.length : 0}</h3>
+                
+                ${data.references ? `
+                    <h3>参考信源列表:</h3>
+                    <ol>
+                        ${data.references.map(ref => `
+                            <li>${ref.title}</li>
+                        `).join('')}
+                    </ol>
+                ` : '<p>没有参考信源</p>'}
+            `;
+        }
+        
+        test();
+    </script>
+</body>
+</html>

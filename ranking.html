@@ -386,6 +386,16 @@
         </div>
     </section>
 
+    <!-- 参考信源 -->
+    <section class="references-section" id="referencesSection" style="background: var(--bg-white); padding: 3rem 0; display: none;">
+        <div class="container">
+            <h2 class="section-title">📚 参考信源</h2>
+            <div class="references-content" style="max-width: 800px; margin: 0 auto;">
+                <ul id="referencesList" style="list-style: none; padding: 0;"></ul>
+            </div>
+        </div>
+    </section>
+
     <!-- 页脚 -->
     <footer class="footer">
         <div class="container">
@@ -401,6 +411,7 @@
                         <li><a href="index.html#industries">行业榜单</a></li>
                         <li><a href="index.html#hot-rankings">热门榜单</a></li>
                         <li><a href="index.html#rules">榜单规则</a></li>
+                        <li><a href="disclaimer.html">榜单说明</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -409,7 +420,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 paihp.com. All rights reserved.</p>
+                <p>&copy; 2025 paihp.com. All rights reserved. | <a href="disclaimer.html" style="color: #999; font-size: 12px;">榜单说明</a></p>
             </div>
         </div>
     </footer>
@@ -451,6 +462,29 @@
 
             // 设置返回行业页链接
             document.getElementById('backToIndustry').href = `industry.html?id=${industryId}`;
+
+            // 渲染参考信源
+            console.log('检查参考信源:', industry.references);
+            if (industry.references && industry.references.length > 0) {
+                console.log('找到参考信源，数量:', industry.references.length);
+                const referencesSection = document.getElementById('referencesSection');
+                const referencesList = document.getElementById('referencesList');
+                
+                if (referencesSection && referencesList) {
+                    referencesSection.style.display = 'block';
+                    referencesList.innerHTML = industry.references.map((ref, index) => `
+                        <li style="padding: 0.75rem 0; border-bottom: 1px solid var(--border-color); color: var(--text-dark); line-height: 1.6;">
+                            <span style="color: var(--primary-color); font-weight: 600; margin-right: 0.5rem;">${index + 1}.</span>
+                            ${ref.title}
+                        </li>
+                    `).join('');
+                    console.log('参考信源已渲染');
+                } else {
+                    console.error('找不到参考信源DOM元素');
+                }
+            } else {
+                console.log('没有参考信源数据');
+            }
 
             // 渲染Top 3品牌
             const top3 = ranking.brands.slice(0, 3);
